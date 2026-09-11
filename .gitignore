@@ -1,0 +1,14 @@
+# Dependencias
+node_modules/
+**/node_modules/
+
+# Archivos de sistema y editores
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# Temporales de build
+dist-ssr/
+*.local
