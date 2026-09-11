@@ -28,18 +28,14 @@ body.started .cover{transform:translateX(-112%) rotate(-1.7deg) rotateY(-4deg);b
 .world{transition:transform 1.25s cubic-bezier(.3,.8,.25,1)}
 .map-island .island-unit{transition:transform .55s cubic-bezier(.2,.8,.2,1),filter .55s}
 .map-island.active .island-unit{transform:translateY(-10px) scale(1.045);filter:drop-shadow(0 20px 20px #61478f30)}
-.scene-copy{left:4.5vw;top:50%;width:min(29vw,430px);max-width:430px;transform:translateY(-52%)}
+.scene-copy{left:5vw;top:50%;width:min(38vw,520px);max-width:520px;transform:translateY(-52%)}
 .scene-copy h2{font-size:clamp(46px,4.35vw,70px);line-height:1.03;margin:16px 0 19px}
 .scene-description{font-size:clamp(19px,1.45vw,24px);line-height:1.42}
 .scene-list{gap:14px;margin-top:22px}
 .scene-list li{font-size:clamp(17px,1.25vw,21px);line-height:1.35;gap:11px}
 .list-check{width:22px;height:22px;min-width:22px;font-size:14px;margin-top:3px}
 .key-button{font-size:17px;padding-top:20px}
-.reference-panel{position:absolute;right:4.2vw;top:14%;width:min(27vw,405px);height:72%;z-index:5;display:flex;flex-direction:column;justify-content:center;pointer-events:none}
-.reference-overline{font-size:12px;letter-spacing:2.7px;color:#846d9b;margin:0 0 13px 7px}
-.image-panel{position:relative;right:auto;top:auto;width:100%;height:min(34vh,330px);display:flex;align-items:center;justify-content:center;perspective:1200px;pointer-events:none}
-.image-panel.visible{display:flex}
-.image-panel img{width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;transform:rotate(3deg) rotateY(-9deg);border-radius:18px;border:8px solid #f7f2ff;box-shadow:17px 23px 0 #b6a2d04d,24px 40px 55px #42315b35;animation:float 6s ease-in-out infinite;background:#f3edfc}
+.reference-panel, .image-panel { display: none !important; }
 .reference-note{font-size:14px;line-height:1.35;color:#756587;margin:23px 3px 0 12px;max-width:310px}
 .scene-label{right:4.5vw;bottom:7vh;font-size:14px;letter-spacing:.3px;color:#806f96}
 .keyboard-hint{position:absolute;left:50%;bottom:3.4vh;transform:translateX(-50%);z-index:11;padding:10px 18px;border:1px solid #c9bedb;background:#f8f3ffb0;backdrop-filter:blur(10px);border-radius:999px;color:#78688c;font-size:14px;letter-spacing:.2px;box-shadow:0 5px 14px #6c57941a}
@@ -164,7 +160,7 @@ body.started .cover{transform:translateX(-110%)!important;visibility:visible;ani
 <body>
 <section class="screen cover" id="cover" aria-label="Portada de SENATI y presentación de integrantes"><div class="page-curl" aria-hidden="true"></div>
 <div class="cover-orbit"></div><div class="cover-orbit two"></div><div class="cover-shape" aria-hidden="true">↗</div><span class="cover-star" aria-hidden="true">✳</span>
-<div class="cover-left"><img class="senati-logo" src="assets/senati-logo.png" alt="SENATI"><div class="cover-kicker">Android Studio → Google Play</div><h1>Del código<br>al <em>mundo.</em></h1><p class="cover-sub">El mapa para convertir tu app<br>en una aplicación publicada.</p></div>
+<div class="cover-left"><div class="logo-fallback display" style="display:flex;align-items:center;font-size:44px;font-weight:800;letter-spacing:1px;color:#272344;height:75px;">SENATI</div><div class="cover-kicker">Android Studio → Google Play</div><h1>Del código<br>al <em>mundo.</em></h1><p class="cover-sub">El mapa para convertir tu app<br>en una aplicación publicada.</p></div>
 <div class="cover-right"><p class="instructor-label">Instructor</p><h2 class="instructor-name">MG. FERNANDO MIGUEL<br>PISFIL ORTIZ</h2><h3 class="crew-title">Equipo 4 · Integrantes</h3><div class="member"><span class="member-number">01</span><p class="member-name">MECHÁN ENEQUE<br>JUAN ENRIQUE</p></div><div class="member"><span class="member-number">02</span><p class="member-name">MORA DAMIAN<br>CHRISTIAN ALFREDO</p></div><div class="member"><span class="member-number">03</span><p class="member-name">MURGA CASTRO<br>ANDRÉ ALEXANDER</p></div><div class="member"><span class="member-number">04</span><p class="member-name">ROMERO CANAQUIRI<br>ROLIN ROY</p></div></div>
 </section>
 <main class="screen map-screen" id="mapScreen" aria-label="Mapa 3D de publicación de una aplicación" tabindex="-1" inert>
@@ -180,7 +176,7 @@ body.started .cover{transform:translateX(-110%)!important;visibility:visible;ani
 
 <g class="cloud" transform="translate(1420 765) scale(.9)" aria-hidden="true"><use href="#cloud"/></g><g class="cloud" style="animation-delay:-5s" transform="translate(870 208) scale(.5)" aria-hidden="true"><use href="#cloud"/></g>
 </svg></div>
-<aside class="reference-panel" id="referencePanel" aria-label="Imagen referencial de la etapa"><div id="imagePanel" class="image-panel visible"><img id="stageImage" alt="Imagen referencial de esta etapa" loading="lazy"></div></aside>
+<!-- Imagen referencial removida a petición del usuario -->
 <div class="scene-copy" id="sceneCopy" aria-live="polite"></div>
 <div class="keyboard-hint" aria-hidden="true">← <span>explorar</span> →</div><div class="progress-line" role="progressbar" aria-label="Etapa del recorrido" aria-valuemin="1" aria-valuemax="6" aria-valuenow="1"><div class="progress-fill"></div></div>
 </main>
@@ -206,7 +202,7 @@ document.getElementById('paths').innerHTML=stages.slice(0,-1).map((s,i)=>{const 
 document.getElementById('islands').innerHTML=stages.map((s,i)=>`<g class="map-island" id="island${i}" transform="translate(${s.x} ${s.y})" tabindex="0" role="button" aria-label="Étape ${i+1}: ${s.name}" aria-pressed="false"><title>${s.label}: ${s.name}</title><ellipse cx="10" cy="111" rx="169" ry="52" fill="#847499" opacity=".25" filter="url(#blur)"/><ellipse class="active-ring" cy="61" rx="218" ry="110" fill="none" stroke="#af96d3" stroke-width="2" stroke-dasharray="5 11"/><g class="island-unit"><path d="m-183 3 24-54 99-46 116 10 116 57 24 48-38 56-117 40-115-31-87-46Z" fill="url(#islandSide)"/><path d="m-183 3 22 34 87 46 115 31V72L-74 39l-87-43Z" fill="url(#darkSide)"/><path d="m-183-28 24-54 99-46 116 10 116 57 24 48-38 56-117 40-115-31-87-46Z" fill="url(#islandTop)" stroke="#e9dff8" stroke-width="2"/><path d="m-163-30 17-41 87-42 110 10 103 52" fill="none" stroke="#f5eafa" stroke-width="3" opacity=".6"/><path d="m-140 33 1 18m48 7 1 22m37-7 1 19m118-18v26m33-43v28" stroke="#635388" stroke-width="3" opacity=".25"/><use href="#crystal" transform="translate(-138 -34) scale(.7)"/><use href="#crystal" transform="translate(-111 -21) scale(.38)"/><use href="#crystal" transform="translate(137 0) scale(.5)"/><g id="art${i}" class="float-art" style="animation-delay:-${i*.8}s" filter="url(#objectShadow)">${art[s.icon]}</g></g><g transform="translate(-90 131)"><circle class="number-disc" r="25"/><text class="number-text" y="9" text-anchor="middle">0${i+1}</text></g><text class="island-name" x="-48" y="140">${s.name}</text></g>`).join('');
 let current=0,started=false,motionOff=matchMedia('(prefers-reduced-motion: reduce)').matches,visited=new Set([0]);const copy=document.getElementById('sceneCopy');const mobile=matchMedia('(max-width:760px)');
 function setCamera(){const st=stages[current];if(mobile.matches){svg.setAttribute('viewBox','0 0 760 560');world.style.transform=`translate(${380-st.x}px,${270-st.y}px)`}else{svg.setAttribute('viewBox','0 0 1600 950');world.style.transform=`translate(${800-st.x}px,${450-st.y}px)`}}
-function renderImage(){const st=stages[current];const panel=document.getElementById('imagePanel');const image=document.getElementById('stageImage');panel.classList.add('visible');image.src=st.image;image.alt=st.imageAlt||`Imagen referencial de ${st.name}`;stages.forEach((_,i)=>document.getElementById('art'+i).style.opacity='1')}
+function renderImage(){stages.forEach((_,i)=>{const el=document.getElementById('art'+i);if(el)el.style.opacity='1'})}
 function showStage(i,scroll=true){current=i;visited.add(i);const st=stages[i];copy.innerHTML=`<div class="stage-kicker">${st.label}</div><h2>${st.title}</h2><p class="scene-description">${st.description}</p><ul class="scene-list">${st.items.map(t=>`<li><span class="list-check">✓</span><span>${t}</span></li>`).join('')}</ul>`;copy.classList.remove('animate');void copy.offsetWidth;copy.classList.add('animate');document.querySelectorAll('.map-island').forEach((g,j)=>{g.classList.toggle('active',j===i);g.setAttribute('aria-pressed',j===i)});stages.slice(0,-1).forEach((_,j)=>document.getElementById('path'+j).style.opacity=j<i?'1':'0');document.querySelector('.progress-fill').style.width=(i+1)/6*100+'%';document.querySelector('.progress-line').setAttribute('aria-valuenow',i+1);setCamera();renderImage();if(scroll)document.getElementById('mapScreen').scrollTo({top:0,behavior:'instant'})}
 function start(){started=true;showStage(0,false);document.body.classList.add('started');document.getElementById('cover').inert=true;document.getElementById('mapScreen').inert=false;document.getElementById('mapScreen').focus({preventScroll:true})}
 function goHome(){started=false;document.body.classList.remove('started');document.getElementById('cover').inert=false;document.getElementById('mapScreen').inert=true}
