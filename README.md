@@ -12,6 +12,7 @@ Portal web y repositorio oficial de presentaciones y exposiciones para el ciclo 
 | :--- | :--- | :--- |
 | **Proyecto · Equipo 04** | Smart City · Ciudad Inteligente (IoT 🌐) | [Ver Exposición](./SEMANA5_SMARTCITY_SEMINARIO.html) |
 | **Proyecto · Equipo 04** | Riesgos IoT · Seguridad conectada (🔒) | [Ver Exposición](./SEMANA05_RIEZGOS_IOT_SOLUCIONES_IOT.html) |
+| **Empleabilidad** | Ética en el branding personal (🌟) | [Ver Exposición](./SEMANA05_ETICA_EN_EL_BRANDING_PERSONAL_EMPLEABILIDAD.html) |
 
 ---
 
