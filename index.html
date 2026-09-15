@@ -20,6 +20,8 @@
       --c-seminario-glow: rgba(168, 85, 247, 0.25);
       --c-movil: #f97316;
       --c-movil-glow: rgba(249, 115, 22, 0.25);
+      --c-iot: #10b981;
+      --c-iot-glow: rgba(16, 185, 129, 0.25);
       --c-past: #64748b;
     }
 
@@ -279,6 +281,31 @@
       box-shadow: 0 6px 20px rgba(249, 115, 22, 0.35);
     }
 
+    /* Course 4: Soluciones IoT */
+    .big-card.card-iot {
+      border-top: 3px solid var(--c-iot);
+    }
+    .big-card.card-iot::before {
+      background: radial-gradient(circle at 50% 0%, var(--c-iot-glow) 0%, transparent 75%);
+    }
+    .big-card.card-iot:hover {
+      border-color: var(--c-iot);
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(16, 185, 129, 0.22);
+    }
+    .big-card.card-iot:hover::before {
+      opacity: 1;
+    }
+    .big-card.card-iot .card-icon {
+      background: rgba(16, 185, 129, 0.12);
+      color: var(--c-iot);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+    .big-card.card-iot .action-btn {
+      background: linear-gradient(135deg, #059669, #10b981);
+      box-shadow: 0 6px 20px rgba(16, 185, 129, 0.35);
+    }
+
     /* Inside Big Card */
     .card-top {
       display: flex;
@@ -536,7 +563,7 @@
             <div class="card-icon">🌐</div>
             <span class="week-pill">SEMANA 05</span>
           </div>
-          <div class="course-badge">Proyecto · Equipo 04</div>
+          <div class="course-badge">Seminario de Complementación</div>
           <h3 class="card-title">Smart City · Ciudad Inteligente</h3>
           <p class="card-desc">
             Dispositivos IoT y servicios que dan vida a una ciudad inteligente: 10 dispositivos, 8 servicios y 5 capas en un recorrido 3D interactivo.
@@ -549,13 +576,13 @@
       </a>
 
       <!-- Destacado: Riesgos IoT Semana 05 -->
-      <a href="./SEMANA05_RIEZGOS_IOT_SOLUCIONES_IOT.html" class="big-card card-seminario" title="Abrir Riesgos IoT Semana 05">
+      <a href="./SEMANA05_RIEZGOS_IOT_SOLUCIONES_IOT.html" class="big-card card-iot" title="Abrir Riesgos IoT Semana 05">
         <div>
           <div class="card-top">
             <div class="card-icon">🔒</div>
             <span class="week-pill">SEMANA 05</span>
           </div>
-          <div class="course-badge">Proyecto · Equipo 04</div>
+          <div class="course-badge">Soluciones IoT</div>
           <h3 class="card-title">Riesgos IoT · Seguridad conectada</h3>
           <p class="card-desc">
             Cámaras y cerraduras inteligentes bajo ataque: botnets, contraseñas débiles y buenas prácticas en laboratorios interactivos.
@@ -587,36 +614,7 @@
       </a>
     </div>
 
-    <!-- Sección 1: Semana 04 (solo queda vigente ASO) -->
-    <div class="section-title-wrap">
-      <h2 class="section-title">
-        Exposiciones de la Semana
-        <span class="tag">SEMANA 04 • EN CURSO</span>
-      </h2>
-    </div>
-
-    <div class="main-grid">
-      <!-- Botón: Desarrollo de Aplicaciones Móviles (único vigente de Semana 04) -->
-      <a href="./SEMANA04_SAO_DESARROLLO_DE_APP_MOV.html" class="big-card card-movil" title="Abrir ASO en Google Play">
-        <div>
-          <div class="card-top">
-            <div class="card-icon">📱</div>
-            <span class="week-pill">SEMANA 04</span>
-          </div>
-          <div class="course-badge">Desarrollo de Apps Móviles</div>
-          <h3 class="card-title">ASO en Acuarela (Google Play)</h3>
-          <p class="card-desc">
-            App Store Optimization: optimización de ficha en Google Play, palabras clave, títulos, recursos visuales y experimentación A/B.
-          </p>
-        </div>
-        <div class="action-btn">
-          <span>Abrir Exposición</span>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" /></svg>
-        </div>
-      </a>
-    </div>
-
-    <!-- Sección 2: HISTORIAL ANTERIOR -->
+    <!-- Sección 2: HISTORIAL ANTERIOR (incluye Desarrollo de Apps Móviles, curso terminado en Semana 04) -->
     <section class="history-section">
       <div class="section-title-wrap">
         <h2 class="section-title">
@@ -693,6 +691,18 @@
             <span class="history-course">Seminario</span>
           </div>
           <h4 class="history-title">Del Código al Mundo</h4>
+          <div class="history-link">
+            <span>Ver exposición anterior</span> →
+          </div>
+        </a>
+
+        <!-- Historial 7: Semana 04 ASO (curso Des. Apps Móviles terminado) -->
+        <a href="./ANTERIORES/SEMANA04_SAO_DESARROLLO_DE_APP_MOV.html" class="history-card">
+          <div class="history-meta">
+            <span class="history-week">Semana 04</span>
+            <span class="history-course">Des. Apps Móviles</span>
+          </div>
+          <h4 class="history-title">ASO en Acuarela (Google Play)</h4>
           <div class="history-link">
             <span>Ver exposición anterior</span> →
           </div>
