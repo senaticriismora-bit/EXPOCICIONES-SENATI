@@ -11,16 +11,17 @@ Portal web y repositorio oficial de presentaciones y exposiciones para el ciclo 
 | Curso | Tema | Enlace Directo |
 | :--- | :--- | :--- |
 | **Proyecto · Equipo 04** | Smart City · Ciudad Inteligente (IoT 🌐) | [Ver Exposición](./SEMANA5_SMARTCITY_SEMINARIO.html) |
+| **Proyecto · Equipo 04** | Riesgos IoT · Seguridad conectada (🔒) | [Ver Exposición](./SEMANA05_RIEZGOS_IOT_SOLUCIONES_IOT.html) |
 
 ---
 
-## 🗂️ Exposiciones de la Semana 04
+## 🗂️ Exposiciones de la Semana 04 (solo queda vigente ASO)
 
 | Curso | Tema | Enlace Directo |
 | :--- | :--- | :--- |
-| **Empleabilidad** | Aprendizaje Ágil (SENATI BOT ⚡) | [Ver Exposición](./ANTERIORES/SEMANA04_APRENDIZAJE_AGIL_EMPLEABILIDAD.html) |
-| **Seminario de Complementación** | Del Código al Mundo (Pasos Seminario) | [Ver Exposición](./ANTERIORES/SEMANA04_PASOS_SEMINARIO.html) |
 | **Desarrollo de Aplicaciones Móviles** | ASO en Acuarela (Google Play Store Optimization) | [Ver Exposición](./SEMANA04_SAO_DESARROLLO_DE_APP_MOV.html) |
+
+> Las exposiciones de Empleabilidad y Seminario de la Semana 04 pasaron al historial (`ANTERIORES/`).
 
 ---
 
@@ -29,6 +30,8 @@ Portal web y repositorio oficial de presentaciones y exposiciones para el ciclo 
 Ubicadas en la carpeta [`ANTERIORES/`](./ANTERIORES/):
 
 - **Semana 05 - Seminario:** [Inmótica · Edificios que piensan](./ANTERIORES/SEMANA_05_INMOTICA_SEMINARIO.html)
+- **Semana 04 - Empleabilidad:** [Aprendizaje Ágil (SENATI BOT)](./ANTERIORES/SEMANA04_APRENDIZAJE_AGIL_EMPLEABILIDAD.html)
+- **Semana 04 - Seminario:** [Del Código al Mundo](./ANTERIORES/SEMANA04_PASOS_SEMINARIO.html)
 
 - **Semana 03 - Empleabilidad:** [Síndrome del Impostor × Reskilling & Upskilling](./ANTERIORES/SINDROME_DEL_IMPOSTOR_SEMANA_3_EMPLEABILIDAD.html)
 - **Semana 02 - Desarrollo de Aplicaciones Móviles:** [Material You · Material Design 3](./ANTERIORES/MATERIAL_YOU_SEMANA_2_DESARROLLO_DE_APP_MOV.html)
