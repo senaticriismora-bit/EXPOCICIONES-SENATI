@@ -6,12 +6,20 @@ Portal web y repositorio oficial de presentaciones y exposiciones para el ciclo 
 
 ---
 
-## 🚀 Exposiciones de la Próxima Semana (Semana 04)
+## 🚀 Exposición Destacada (Semana 05)
 
 | Curso | Tema | Enlace Directo |
 | :--- | :--- | :--- |
-| **Empleabilidad** | Aprendizaje Ágil (SENATI BOT ⚡) | [Ver Exposición](./SEMANA04_APRENDIZAJE_AGIL_EMPLEABILIDAD.html) |
-| **Seminario de Complementación** | Del Código al Mundo (Pasos Seminario) | [Ver Exposición](./SEMANA04_PASOS_SEMINARIO.html) |
+| **Proyecto · Equipo 04** | Smart City · Ciudad Inteligente (IoT 🌐) | [Ver Exposición](./SEMANA5_SMARTCITY_SEMINARIO.html) |
+
+---
+
+## 🗂️ Exposiciones de la Semana 04
+
+| Curso | Tema | Enlace Directo |
+| :--- | :--- | :--- |
+| **Empleabilidad** | Aprendizaje Ágil (SENATI BOT ⚡) | [Ver Exposición](./ANTERIORES/SEMANA04_APRENDIZAJE_AGIL_EMPLEABILIDAD.html) |
+| **Seminario de Complementación** | Del Código al Mundo (Pasos Seminario) | [Ver Exposición](./ANTERIORES/SEMANA04_PASOS_SEMINARIO.html) |
 | **Desarrollo de Aplicaciones Móviles** | ASO en Acuarela (Google Play Store Optimization) | [Ver Exposición](./SEMANA04_SAO_DESARROLLO_DE_APP_MOV.html) |
 
 ---
@@ -19,6 +27,8 @@ Portal web y repositorio oficial de presentaciones y exposiciones para el ciclo 
 ## 📚 Historial de Exposiciones Anteriores
 
 Ubicadas en la carpeta [`ANTERIORES/`](./ANTERIORES/):
+
+- **Semana 05 - Seminario:** [Inmótica · Edificios que piensan](./ANTERIORES/SEMANA_05_INMOTICA_SEMINARIO.html)
 
 - **Semana 03 - Empleabilidad:** [Síndrome del Impostor × Reskilling & Upskilling](./ANTERIORES/SINDROME_DEL_IMPOSTOR_SEMANA_3_EMPLEABILIDAD.html)
 - **Semana 02 - Desarrollo de Aplicaciones Móviles:** [Material You · Material Design 3](./ANTERIORES/MATERIAL_YOU_SEMANA_2_DESARROLLO_DE_APP_MOV.html)
