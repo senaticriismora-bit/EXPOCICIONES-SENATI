@@ -89,6 +89,8 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;bac
 .photowrap figcaption{padding:.55rem 1rem;font-size:.9rem;color:var(--mut);font-weight:700;letter-spacing:.12em}
 .photowrap figcaption b{color:var(--mint)}
 .spec{margin-top:1rem;font-weight:700;letter-spacing:.14em;font-size:.95rem;color:var(--amber)}
+.price{margin-top:.9rem;display:inline-flex;align-items:baseline;gap:.5rem;background:#ffb43a18;border:1.5px solid var(--amber);border-radius:999px;padding:.4rem 1.1rem;font-family:'Unbounded';font-weight:800;font-size:1.25rem;color:var(--amber)}
+.price span{font-family:'Space Grotesk';font-weight:700;font-size:.8rem;letter-spacing:.14em;color:var(--mut)}
 .soilscene{position:absolute;inset:0;background:linear-gradient(#0a1210 55%,#132019 55%)}
 .soilfill{position:absolute;bottom:0;left:0;width:100%;height:30%;background:#7a5636;transition:height .3s,background .3s}
 .plant{position:absolute;left:50%;transform:translateX(-50%);bottom:29%;font-size:3rem;transition:bottom .3s,font-size .3s}
@@ -276,6 +278,7 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;bac
       <h2 class="rv">TEMPERATURA Y HUMEDAD</h2>
       <p class="big rv">Mide el <b>calor</b> y el <b>vapor de agua</b> del ambiente en tiempo real.</p>
       <p class="spec rv">MIDE −40~80 °C · 0~100 %HR</p>
+      <p class="price rv">S/ 34.00 <span>APROX · PERÚ</span></p>
       <div class="uses rv"><span class="chip">Invernaderos</span><span class="chip a">Climatización</span><span class="chip c">Servidores</span></div>
       <div class="row rv"><div class="val" id="rTemp">24<small>°C</small></div><div class="val" id="rHum" style="color:var(--cyan)">55<small>%</small></div></div>
     </div>
@@ -316,6 +319,7 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;bac
       <h2 class="rv">MOVIMIENTO<br>PIR</h2>
       <p class="big rv">Detecta el <b>calor corporal</b> de personas dentro de su zona de visión.</p>
       <p class="spec rv">MIDE PRESENCIA HASTA 7 M · 110°</p>
+      <p class="price rv">S/ 8.00 <span>APROX · PERÚ</span></p>
       <div class="uses rv"><span class="chip">Alarmas</span><span class="chip a">Luces automáticas</span><span class="chip c">Conteo de personas</span></div>
       <div class="row rv"><div class="badge" id="sPir">SIN MOVIMIENTO</div></div>
     </div>
@@ -344,6 +348,7 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;bac
       <h2 class="rv">DISTANCIA<br>ULTRASÓNICO</h2>
       <p class="big rv">Emite <b>ondas de sonido</b> y calcula la distancia midiendo el rebote.</p>
       <p class="spec rv">MIDE 2~400 CM · ±3 MM</p>
+      <p class="price rv">S/ 8.00 <span>APROX · PERÚ</span></p>
       <div class="uses rv"><span class="chip">Robots anti-choque</span><span class="chip a">Nivel de tanques</span><span class="chip c">Parkeo</span></div>
       <div class="row rv"><div class="val" id="rUs" style="color:var(--cyan)">120<small> cm</small></div></div>
     </div>
@@ -372,6 +377,7 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;bac
       <h2 class="rv">LUZ<br>AMBIENTAL</h2>
       <p class="big rv">Mide la <b>luminosidad</b> en lux y activa acciones según brille u oscurezca.</p>
       <p class="spec rv">MIDE 0~65535 LUX</p>
+      <p class="price rv">S/ 10.00 <span>APROX · PERÚ</span></p>
       <div class="uses rv"><span class="chip">Alumbrado público</span><span class="chip a">Pantallas auto</span><span class="chip c">Agrícola</span></div>
       <div class="row rv"><div class="val" id="rLux" style="color:var(--amber)">650<small> lux</small></div><div class="badge" id="sLux">PLENA LUZ</div></div>
     </div>
@@ -398,6 +404,7 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;bac
       <h2 class="rv">GAS Y CALIDAD<br>DEL AIRE</h2>
       <p class="big rv">Detecta <b>humo, CO₂ y gases tóxicos</b> disparando alertas tempranas.</p>
       <p class="spec rv">MIDE 10~1000 PPM (ESTIMADO)</p>
+      <p class="price rv">S/ 15.00 <span>APROX · PERÚ</span></p>
       <div class="uses rv"><span class="chip">Cocinas industriales</span><span class="chip a">Mineras</span><span class="chip c">Ciudades</span></div>
       <div class="row rv"><div class="val" id="rGas" style="color:var(--amber)">180<small> ppm</small></div><div class="badge" id="sGas">AIRE LIMPIO</div></div>
     </div>
@@ -424,6 +431,7 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;bac
       <h2 class="rv">ACELERÓMETRO<br>+ GIROSCOPIO</h2>
       <p class="big rv">Siente <b>inclinación, giro y vibración</b> en tres ejes: X, Y, Z.</p>
       <p class="spec rv">MIDE GIRO ±2000 °/S · ±16 G</p>
+      <p class="price rv">S/ 18.00 <span>APROX · PERÚ</span></p>
       <div class="uses rv"><span class="chip">Wearables</span><span class="chip a">Drones</span><span class="chip c">Sismos</span></div>
       <div class="row rv"><div class="val" id="rX" style="color:var(--mint)">X 0°</div><div class="val" id="rY" style="color:var(--amber)">Y 0°</div></div>
     </div>
@@ -453,6 +461,7 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;bac
       <h2 class="rv">HUMEDAD<br>DE SUELO</h2>
       <p class="big rv">Mide el <b>agua en la tierra</b> para regar solo cuando la planta lo pide.</p>
       <p class="spec rv">MIDE 0~100 % · SALIDA ANALÓGICA</p>
+      <p class="price rv">S/ 15.00 <span>APROX · PERÚ</span></p>
       <div class="uses rv"><span class="chip">Riego automático</span><span class="chip a">Invernaderos</span><span class="chip c">Jardines</span></div>
       <div class="row rv"><div class="val" id="rSoil" style="color:var(--cyan)">45<small> %</small></div><div class="badge" id="sSoil">HÚMEDO</div></div>
     </div>
@@ -472,6 +481,7 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;bac
         <div class="frow"><span>SALIDA</span><b>Analógica 0~3 V</b></div>
         <div class="frow"><span>VOLTAJE</span><b>3.3~5 V</b></div>
         <div class="frow"><span>USO</span><b>Riego automático</b></div>
+        <div class="frow"><span>PRECIO</span><b>S/ 15.00 aprox</b></div>
       </div>
     </figure>
   </div>
