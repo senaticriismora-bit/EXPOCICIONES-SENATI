@@ -95,6 +95,7 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;bac
 .ficha{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--panel);display:flex;flex-direction:column;min-height:340px}
 .ficha figcaption{padding:.8rem 1rem;font-size:.9rem;color:var(--mut);font-weight:700;letter-spacing:.12em;border-bottom:1px solid var(--line)}
 .ficha figcaption b{color:var(--amber)}
+.fichailu{width:100%;height:190px;background:#0a1210;border-bottom:1px solid var(--line)}
 .frows{display:flex;flex-direction:column;flex:1}
 .frow{flex:1;display:flex;flex-direction:column;justify-content:center;gap:.2rem;padding:.7rem 1rem;border-bottom:1px solid var(--line)}
 .frow:last-child{border-bottom:none}
@@ -157,6 +158,14 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;bac
 /* FLUJO */
 .flowwrap{width:min(1150px,100%);text-align:center}
 .flowwrap svg{width:100%;height:auto;margin-top:1rem}
+.jnum{font-family:'Unbounded';font-weight:700;font-size:16px;fill:var(--mint)}
+.jact{font-family:'Space Grotesk';font-weight:700;font-size:16px;fill:var(--mint)}
+.jdet{font-family:'Space Grotesk';font-size:15px;fill:var(--mut)}
+.journey{margin-top:1.6rem;background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:1rem 1.4rem;display:flex;gap:1.2rem;align-items:center;justify-content:center;flex-wrap:wrap}
+.jlab{font-weight:700;letter-spacing:.24em;font-size:.85rem;color:var(--amber)}
+.jsteps{display:flex;gap:.7rem;align-items:center;flex-wrap:wrap;justify-content:center;font-size:1.1rem}
+.jsteps b{font-family:'Unbounded';font-weight:700;font-size:1rem}
+.jsteps i{font-style:normal;color:var(--mint)}
 .fpath{stroke-dasharray:5 13;animation:dash 1.1s linear infinite}
 @keyframes dash{to{stroke-dashoffset:-18}}
 .more{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}
@@ -456,6 +465,22 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;bac
     </div>
     <figure class="ficha rv">
       <figcaption>📋 FICHA TÉCNICA · <b>SUELO</b></figcaption>
+      <svg viewBox="0 0 200 250" class="fichailu" role="img" aria-label="Ilustración del sensor capacitivo de suelo v1.2">
+        <rect x="35" y="18" width="130" height="222" rx="12" fill="#b3271e"/>
+        <rect x="35" y="18" width="130" height="222" rx="12" fill="none" stroke="#7d1a14" stroke-width="3"/>
+        <rect x="80" y="2" width="40" height="26" rx="3" fill="#141414"/>
+        <rect x="86" y="8" width="8" height="8" fill="#d8a93f"/><rect x="98" y="8" width="8" height="8" fill="#d8a93f"/><rect x="110" y="8" width="8" height="8" fill="#d8a93f"/>
+        <rect x="82" y="44" width="36" height="16" rx="2" fill="#141414"/>
+        <rect x="46" y="70" width="108" height="150" fill="none" stroke="#f2ede4" stroke-width="2"/>
+        <g stroke="#d8a93f" stroke-width="7" stroke-linecap="round">
+          <line x1="56" y1="92" x2="118" y2="92"/><line x1="82" y1="110" x2="144" y2="110"/>
+          <line x1="56" y1="128" x2="118" y2="128"/><line x1="82" y1="146" x2="144" y2="146"/>
+          <line x1="56" y1="164" x2="118" y2="164"/><line x1="82" y1="182" x2="144" y2="182"/>
+          <line x1="56" y1="200" x2="118" y2="200"/>
+        </g>
+        <circle cx="100" cy="230" r="5" fill="#7d1a14"/>
+        <text x="100" y="66" text-anchor="middle" font-family="Space Grotesk" font-size="9" font-weight="700" fill="#f2ede4" letter-spacing="1">SOIL v1.2</text>
+      </svg>
       <div class="frows">
         <div class="frow"><span>MODELO</span><b>Capacitivo v1.2</b></div>
         <div class="frow"><span>MIDE</span><b>0~100 % humedad</b></div>
@@ -472,24 +497,37 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;bac
   <div class="flowwrap">
     <span class="tag rv">ARQUITECTURA IoT</span>
     <h2 class="rv">EL VIAJE DEL DATO</h2>
-    <svg viewBox="0 0 1000 260" class="rv">
-      <path id="fp" class="fpath" d="M70,130 C 210,40 350,220 500,130 S 790,40 930,130"
+    <svg viewBox="0 0 1000 360" class="rv">
+      <path id="fp" class="fpath" d="M70,110 C 210,20 350,200 500,110 S 790,20 930,110"
             fill="none" stroke="#2ee59d" stroke-width="3" opacity=".8"/>
       <circle r="8" fill="#ffb43a"><animateMotion dur="6s" repeatCount="indefinite"><mpath href="#fp"/></animateMotion></circle>
       <circle r="8" fill="#39d0e0"><animateMotion dur="6s" begin="2s" repeatCount="indefinite"><mpath href="#fp"/></animateMotion></circle>
       <circle r="8" fill="#2ee59d"><animateMotion dur="6s" begin="4s" repeatCount="indefinite"><mpath href="#fp"/></animateMotion></circle>
       <g font-size="30" text-anchor="middle">
-        <circle cx="70" cy="130" r="36" fill="#111917" stroke="#2ee59d" stroke-width="2.5"/><text x="70" y="141">🌡</text>
-        <circle cx="285" cy="130" r="36" fill="#111917" stroke="#ffb43a" stroke-width="2.5"/><text x="285" y="141">⚙️</text>
-        <circle cx="500" cy="130" r="36" fill="#111917" stroke="#39d0e0" stroke-width="2.5"/><text x="500" y="141">📶</text>
-        <circle cx="715" cy="130" r="36" fill="#111917" stroke="#2ee59d" stroke-width="2.5"/><text x="715" y="141">☁️</text>
-        <circle cx="930" cy="130" r="36" fill="#111917" stroke="#ffb43a" stroke-width="2.5"/><text x="930" y="141">📱</text>
+        <circle cx="70" cy="110" r="36" fill="#111917" stroke="#2ee59d" stroke-width="2.5"/><text x="70" y="121">🌡</text>
+        <circle cx="285" cy="110" r="36" fill="#111917" stroke="#ffb43a" stroke-width="2.5"/><text x="285" y="121">⚙️</text>
+        <circle cx="500" cy="110" r="36" fill="#111917" stroke="#39d0e0" stroke-width="2.5"/><text x="500" y="121">📶</text>
+        <circle cx="715" cy="110" r="36" fill="#111917" stroke="#2ee59d" stroke-width="2.5"/><text x="715" y="121">☁️</text>
+        <circle cx="930" cy="110" r="36" fill="#111917" stroke="#ffb43a" stroke-width="2.5"/><text x="930" y="121">📱</text>
       </g>
       <g font-family="Unbounded" font-weight="700" font-size="17" fill="#eef4ef" text-anchor="middle">
-        <text x="70" y="200">SENSOR</text><text x="285" y="200">MICRO</text>
-        <text x="500" y="200">WIFI</text><text x="715" y="200">NUBE</text><text x="930" y="200">APP</text>
+        <text x="70" y="182">SENSOR</text><text x="285" y="182">MICRO</text>
+        <text x="500" y="182">WIFI</text><text x="715" y="182">NUBE</text><text x="930" y="182">APP</text>
+      </g>
+      <g text-anchor="middle">
+        <text class="jnum" x="70" y="48">01</text><text class="jnum" x="285" y="48">02</text>
+        <text class="jnum" x="500" y="48">03</text><text class="jnum" x="715" y="48">04</text><text class="jnum" x="930" y="48">05</text>
+        <text class="jact" x="70" y="212">SIENTE</text><text class="jdet" x="70" y="236">mide el mundo físico</text>
+        <text class="jact" x="285" y="212">PIENSA</text><text class="jdet" x="285" y="236">lee y decide (ESP32)</text>
+        <text class="jact" x="500" y="212">VIAJA</text><text class="jdet" x="500" y="236">lleva el dato</text>
+        <text class="jact" x="715" y="212">GUARDA</text><text class="jdet" x="715" y="236">analiza e historia</text>
+        <text class="jact" x="930" y="212">MUESTRA</text><text class="jdet" x="930" y="236">ves y actúas</text>
       </g>
     </svg>
+    <div class="journey rv">
+      <span class="jlab">EJEMPLO REAL</span>
+      <div class="jsteps"><b>24 °C</b><i>➜</i><b>ESP32</b><i>➜</i><b>WiFi</b><i>➜</i><b>Nube</b><i>➜</i><b>Tu celular 📱</b></div>
+    </div>
     <div class="more rv">
       <div class="mcard"><em>⏱</em><div><b>PRESIÓN</b><span>BMP280</span></div></div>
       <div class="mcard"><em>💧</em><div><b>FLUJO DE AGUA</b><span>YF-S201</span></div></div>
