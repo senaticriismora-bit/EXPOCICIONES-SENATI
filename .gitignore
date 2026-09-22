@@ -10,5 +10,9 @@ Thumbs.db
 .idea/
 
 # Temporales de build
+dist/
 dist-ssr/
 *.local
+
+# Fuentes React (nuevo/01 y 02) - solo se publica el HTML compilado
+nuevo/
