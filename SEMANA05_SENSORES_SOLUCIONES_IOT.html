@@ -589,18 +589,18 @@ function gas(){const v=+gPpm.value,n=Math.round(v/1000*26);
 gP.oninput=gas;gas();
 
 /* ---- 07 Suelo ---- */
-const sM=document.getElementById('sMoist'),sS=document.getElementById('sSoil'),sF=document.getElementById('soilFill'),sP=document.getElementById('plant');
-function soil(){const v=+sM.value;
-  sF.style.height=(8+v*.5)+'%';
-  sF.style.background=mix('#c9a06a','#3d2413',v/100);
-  sP.style.bottom=(7+v*.5)+'%';
-  sP.style.fontSize=(2.2+v/100*2.4)+'rem';
-  sP.textContent=v<25?'🥀':v<70?'🌱':'🌿';
+const sMo=document.getElementById('sMoist'),sSt=document.getElementById('sSoil'),sFi=document.getElementById('soilFill'),sPl=document.getElementById('plant');
+function soil(){const v=+sMo.value;
+  sFi.style.height=(8+v*.5)+'%';
+  sFi.style.background=mix('#c9a06a','#3d2413',v/100);
+  sPl.style.bottom=(7+v*.5)+'%';
+  sPl.style.fontSize=(2.2+v/100*2.4)+'rem';
+  sPl.textContent=v<25?'🥀':v<70?'🌱':'🌿';
   document.getElementById('rSoil').innerHTML=v+'<small> %</small>';
-  if(v<25){sS.textContent='SECO · RIEGA';sS.className='badge warn';}
-  else if(v<70){sS.textContent='HÚMEDO';sS.className='badge';}
-  else{sS.textContent='ENCHARCADO';sS.className='badge alert';}}
-sM.oninput=soil;soil();
+  if(v<25){sSt.textContent='SECO · RIEGA';sSt.className='badge warn';}
+  else if(v<70){sSt.textContent='HÚMEDO';sSt.className='badge';}
+  else{sSt.textContent='ENCHARCADO';sSt.className='badge alert';}}
+sMo.oninput=soil;soil();
 
 /* ---- 06 Cubo 3D ---- */
 const sc=document.getElementById('scene3d'),cube=document.getElementById('cube');
